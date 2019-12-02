@@ -23,7 +23,7 @@ class ProductPage(BasePage):
         message = self.get_element_present(*ProductPageLocators.MESSAGE_ABOUT_ADDING)
         assert message is not None, "Message adding is not present"
         message = message.text
-        assert product_name in message, "No product name in the message"
+        assert product_name == message, "No product name in the message"
 
     def should_be_coast_equal(self):
         basket_total = self.get_element_present(*ProductPageLocators.MESSAGE_BASKET_TOTAL)
@@ -34,4 +34,4 @@ class ProductPage(BasePage):
         assert product_price is not None, "Product price not found"
         product_price = product_price.text
 
-        assert product_price in basket_total, "No product price in the message"
+        assert product_price == basket_total, "No product price in the message"
