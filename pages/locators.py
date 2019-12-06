@@ -4,9 +4,15 @@ from selenium.webdriver.common.by import By
 
 
 class LoginPageLocators():
-    LOGIN_PAGE_LINK = (By.CSS_SELECTOR, "#login_link")
     LOGIN_FORM = (By.CSS_SELECTOR, "#login_form")
     REGISTER_FORM = (By.CSS_SELECTOR, "#register_form")
+    LOGIN_FORM_EMAIL = (By.CSS_SELECTOR, "#id_login-username")
+    LOGIN_FORM_PASSWORD = (By.CSS_SELECTOR, "#id_login-password")
+    LOGIN_FORM_BUTTON = (By.CSS_SELECTOR, "#login_form .btn")
+    REG_FORM_EMAIL = (By.CSS_SELECTOR, "#id_registration-email")
+    REG_FORM_PASS1 = (By.CSS_SELECTOR, "#id_registration-password1")
+    REG_FORM_PASS2 = (By.CSS_SELECTOR, "#id_registration-password2")
+    REG_FORM_BUTTON = (By.CSS_SELECTOR, "#register_form .btn")
 
 
 class ProductPageLocators():
@@ -23,4 +29,5 @@ class BasePageLocators():
     LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
     BASKET_BUTTON = (By.CSS_SELECTOR, "span.btn-group a.btn.btn-default")
     BASKET_IS_EMPTY = (By.XPATH, "//p[contains(text(), 'empty')]")
+    USER_ICON = (By.CSS_SELECTOR, ".icon-user")
 
