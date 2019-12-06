@@ -17,6 +17,7 @@ class LoginPage(BasePage):
     def should_be_register_form(self):
         assert self.is_element_present(*LoginPageLocators.REGISTER_FORM), "Register form not found"
 
+
     def register_new_user(self, email, password):
         self.go_to_login_page()
         self.should_be_register_form()

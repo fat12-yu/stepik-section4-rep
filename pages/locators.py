@@ -30,4 +30,3 @@ class BasePageLocators():
     BASKET_BUTTON = (By.CSS_SELECTOR, "span.btn-group a.btn.btn-default")
     BASKET_IS_EMPTY = (By.XPATH, "//p[contains(text(), 'empty')]")
     USER_ICON = (By.CSS_SELECTOR, ".icon-user")
-

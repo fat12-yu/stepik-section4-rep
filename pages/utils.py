@@ -20,6 +20,7 @@ def generate_random_email():
          one_domain = str(get_one_random_domain(domains))
          return f"{one_name}@{one_domain}"
 
+
 def generate_random_password():
     newpass = ''
     for i in range(9):
